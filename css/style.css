@@ -1,0 +1,44 @@
+body   {
+background:url("../images/2.jpg")no-repeat center;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-attachment: fixed;
+height: 500px;
+width: 100%;
+padding-left: 10%;
+padding-right: 10%;
+}
+h1{
+  font-size: 3.5em;
+}
+.clim {
+	display: inline-block;  
+	font-size: 1.5em;
+  	color:#222c61;
+  	padding: 1% 1% 1% 1%;
+  	margin: 1% auto;
+  	box-shadow: .1em .1em .1em #444;
+  	opacity: 0.7;
+  	background-color: white;
+  	border-radius:10%;
+}
+.opacity{
+   background-color: #f8f8f8;
+   opacity:0.6;
+   filter:alpha(opacity=60); /* IE < 9.0 */
+   width:200px;
+   height:70px;
+}
+/*Search Bar CSS*/
+#search-wrapper {
+  position: relative;
+  margin-top: 50px;
+ 
+}
+#search-btn {
+  margin-left: 15px;
+}
+
+

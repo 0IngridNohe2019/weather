@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="Weat" >
+	<head>
+		<title>Weather</title>
+		<link rel="stylesheet"  href="lib/boo/css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/fontello.css">
+	</head>
+	<body ng-controller="Weat" >
+		<center><h1><img src="images/3.gif" width="60" height="60">Pronostico del Clima</h1></center>
+
+				    <div class="icon-search" id="search-wrapper">
+				    	<input  type="checkbox" name="check">
+      <form id="searchbar">
+        <div class="row">
+          	<div class="input-group">
+           <input type="text" class="form-control text-center" id = "city-input" placeholder="Enter a City" ng-model="pais">
+            <span class="input-group-btn">
+              </span>
+              <div class="input-group-text" ng-click="buscar(pais)">@</div>
+          </div> 
+
+          <div class="container">
+
+		</div>
+
+
+
+
+
+
+
+
+          <br> <br>
+		<div class="container">
+			<div class="row" ng-repeat="n in Lista">
+				<div class="col-md-3 cim opacity">
+					Temperatura <br>
+					{{n.data.list[0].main.temp}}
+				</div>
+	   			<div class="col-md-3 cim opacity">Clima <br>
+	   				{{n.data.list[0].weather[0].description}}
+
+	   			</div> 
+	   			<div class="col-md-3 cim opacity">Humedad <br>{{n.data.list[0].main.humidity}}</div> 
+	   			<div class="col-md-3 cim opacity">viento <br>
+	   				{{n.data.list[0].wind.speed}}
+
+	   			</div> 
+		   </div>
+		</div>
+			
+
+
+
+
+
+		<script type="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+		<script type="text/javascript"></script>
+		<script src="lib/angular.js"></script>
+		<script src="lib/boo/css/bootstrap.css"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
